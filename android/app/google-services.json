@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "864032056572",
+    "project_id": "flutter-kart-a24d5",
+    "storage_bucket": "flutter-kart-a24d5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:864032056572:android:b0e3efe13cbb39b951e379",
+        "android_client_info": {
+          "package_name": "com.sh.flutter_kart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "864032056572-mluvnuj6b2fslg21kfqkjnurtprodifh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZUofF1h_MLzzPt63mcxwnGPPciakkFaQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "864032056572-mluvnuj6b2fslg21kfqkjnurtprodifh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
