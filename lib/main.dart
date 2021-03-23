@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:firebase_core/firebase_core.dart';
+import 'package:google_fonts/google_fonts.dart';
+
+import 'package:flutter_kart/screens/landing_page.dart';
 
 void main() {
   runApp(MyApp());
@@ -10,41 +12,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(
+        textTheme: GoogleFonts.poppinsTextTheme(
+          Theme.of(context).textTheme,
+        ),
+      ),
       home: LandingPage(),
-    );
-  }
-}
-
-class LandingPage extends StatelessWidget {
-  final Future<FirebaseApp> _initialization = Firebase.initializeApp();
-
-  @override
-  Widget build(BuildContext context) {
-    return FutureBuilder(
-      future: _initialization,
-      builder: (context, snapshot) {
-        if (snapshot.hasError) {
-          return Scaffold(
-            body: Center(
-              child: Text("Error: ${snapshot.error}"),
-            ),
-          );
-        }
-
-        if (snapshot.connectionState == ConnectionState.done) {
-          return Scaffold(
-            body: Center(
-              child: Text("Firebase initialized!"),
-            ),
-          );
-        }
-
-        return Scaffold(
-          body: Center(
-            child: Text("Initializing Firebase...."),
-          ),
-        );
-      },
     );
   }
 }
